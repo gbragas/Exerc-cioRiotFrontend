@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Item from '../views/Item.vue'
+
+
 
 Vue.use(VueRouter)
 
@@ -8,7 +11,13 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Home',
+    redirect: '/itens',
     component: Home
+  },
+  {
+    path: '/itens',
+    name: 'Item',
+    component: Item
   },
   {
     path: '/about',
